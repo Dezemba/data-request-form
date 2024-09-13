@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+    <title>Data request form </title>
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   <script src="mmerequest.js"></script>
+   <link rel="stylesheet" href="mmerequest.css">
+	</head>
+	
+	<body>
+    <form action="action_page.php" onsubmit="return validateForm()" method="post">
+  <span class="form-style-3">
+  <div class="container">
+    <h1>Data request form</h1>
+	  
+   
+      
+    
+<fieldset><div class="section"><span>1</span></div> <legend>Personal details </legend>
+  <div>
+<label for ="date">Date of request <span class="required">*</span><input type="datetime-local"class= "input-field" name= "field0" value=""min="2022-10-12"/></label>
+<i class="fas fa-exclamation-circle failure-icon"></i>
+<i class="far fa-check-circle success-icon"></i>
+<div class="error"></div>
+
+</div>
+<div>
+  <label for="gname">Name </label> 
+  <input id="gname" gname="gname" type="gname"placeholder="your full name" >
+  <i class="fas fa-exclamation-circle failure-icon"></i>
+  <i class="far fa-check-circle success-icon"></i>
+  <div class="error"></div>
+
+  </div>
+<div>
+  <label for="email">Email</label>
+  <input id="email" name="email" type="email" >
+  <i class="fas fa-exclamation-circle failure-icon"></i>
+      <i class="far fa-check-circle success-icon"></i>
+      <div class="error"></div>
+ 
+  
+</div>
+
+<div>
+  <label for="cellphone">Contact number</label>
+  <input id="cellphone" name="cellphone" type="cell" >
+  <i class="fa fa-check-circle" style="font-size:24px"></i>
+  <i class="fa fa-exclamation-circle" style="font-size:24px"></i>
+  <small>Error message</small>
+  
+</div>
+
+<div>
+  <label for="organization">Organization</label>
+  <input id="organization" name="organization" type="org" >
+  <i class="fa fa-check-circle" style="font-size:24px"></i>
+  <i class="fa fa-exclamation-circle" style="font-size:24px"></i>
+  <small>Error message</small>
+  
+<div>
+  <label for="field4"><span> Requestor type<span class="required">*</span> </label> 
+<select name="rtype">
+ <option value="">--Make a choice--</option>
+<option>Student/Researcher</option>
+<option>Private</option>
+<option>Govt/SEO</option>
+<option>Others</option>
+</select>
+      </div>
+    </fieldset>
+
+ 
+
+
+    
+    
+<fieldset><div class="section"><span>2</span></div><legend>Data details</legend>
+    
+    <label for="field4"><span> Type of data request <span class="required">*</span> </label> 
+
+         <input name="Shapefile" type="radio" value="Shapefile" checked="checked">
+Shapefile
+        <input name="Map" type="radio" value="Map">
+      Map
+        <input name="Explanation" type="radio" value="Explanation">
+    Explanation
+    <input name="Publication" type="radio" value="Publication">
+    Publication
+		
+</select>
+
+ 
+</p>
+<label for="field6"><span>Data description  </span> <textarea name="field6" class="textarea-field">  include any helpful information e.g purpose of the data, what to include </textarea></label>
+    
+ <label for="field6"><span> Collection of data:<span class="required">*</span> </label>
+   <input name="office" type="radio" value="pick up from MME office" checked="checked">
+   office
+        <input name="Email" type="radio" value="via Email">
+        Email
+ 
+</select>
+</p>
+<div></div><span class="privacy-policy">
+  <input type="checkbox" name="field7">You agree to our Terms and Policy. 
+  </span>
+  <button type="submit" id="submit">Submit</button>
+
+
+ </div>
+ 
+</fieldset>
+<div>
+</div>
+</div>
+
+</form>
+	</body>
+</html>
